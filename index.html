@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./swiper_test2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <title>NEWNEEK</title>
+  </head>
+  <body>
+    <header class="hd mw">
+      <div class="top_func">
+        <a href="#" class="logo">
+          <img src="./images/logo_newneek.png" alt="logo_newneek" />
+        </a>
+        <div class="top_icons">
+          <button class="btn_login">로그인</button>
+          <button class="btn_search">검색</button>
+          <button class="btn_dark on">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="top_nav">
+        <div class="gnb">
+          <a href="#"><span data-hover="뉴스레터">뉴스레터</span></a>
+          <a href="#"><span data-hover="피자스테이션">피자스테이션</span></a>
+          <a href="#"><span data-hover="뉴닉퀴즈">뉴닉퀴즈</span></a>
+          <a href="#"><span data-hover="뉴문뉴답">뉴문뉴답</span></a>
+          <a href="#"><span data-hover="캠페인">캠페인</span></a>
+          <a href="#"><span data-hover="뉴닉탄생기">뉴닉탄생기</span></a>
+        </div>
+        <a href="#" class="btn_free"><span>무료로 구독하기</span></a>
+      </nav>
+    </header>
+
+    <!-- 메인영역 -->
+    <main>
+      <!-- 오늘의1분뉴스 -->
+      <div class="inside mw">
+        <section class="sec1">
+          <ul class="short_news">
+            <li class="short00">
+              <div class="short00_title title">
+                <strong>오늘의 1분 뉴스</strong>
+                <img src="./images/제목_도형.png" alt="" />
+              </div>
+              <div>
+                <a href="#" class="view_more">
+                  <span>더보기</span>
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </li>
+            <li class="short01 short_news_inner">
+              <a href="#">
+                <span class="short01_sub">미국:전투기는 보내기 좀 그래</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">142</span>
+              </div>
+            </li>
+            <li class="short02 short_news_inner">
+              <a href="#">
+                <span class="short02_sub">심각한 저성장입니다</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">1183</span>
+              </div>
+            </li>
+            <li class="short03 short_news_inner">
+              <a href="#">
+                <span class="short03_sub">안 오르는 거 빼고 다 올라</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">10</span>
+              </div>
+            </li>
+            <li class="short04 short_news_inner">
+              <a href="#">
+                <span class="short04_sub">미분양만 쌓이네</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">483</span>
+              </div>
+            </li>
+            <li class="short05 short_news_inner">
+              <a href="#">
+                <span class="short05_sub">한국만 PCR 검사받고 가실게요</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">177</span>
+              </div>
+            </li>
+            <li class="short06 short_news_inner">
+              <a href="#">
+                <span class="short06_sub">캐나다의 마약 정책 실험</span>
+              </a>
+              <div>
+                <i class="fa-solid fa-eye"></i>
+                <span class="view">100</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- 고슴이구독 -->
+        <section class="sec2">
+          <div class="sec2_inner">
+            <div class="sec2_title">
+              <p>우리가 시간이 없지,</p>
+              <p>세상이 안 궁금하냐!</p>
+            </div>
+            <div class="sec2_text_con">
+              <div class="sec2_text1">
+                <p>지금 구독하면 <span>내일 아침</span>에 읽을 수 있어요.</p>
+                <p>지금 <span>521,545명</span>이 뉴닉을 읽고 있어요.</p>
+              </div>
+              <p>월화수목금 아침마다 세상 돌아가는 소식을 메일로 받아보세요.</p>
+            </div>
+            <button class="btn">뉴스레터 무료로 구독하기</button>
+          </div>
+        </section>
+      </div>
+      <!-- 최신뉴스레터 -->
+      <section class="sec3 sec_mw">
+        <div class="sec3_title sec_title">
+          <div class="sec3_title_new title">
+            <strong>최신 뉴스레터</strong>
+            <img src="./images/제목_도형.png" alt="" />
+          </div>
+          <div>
+            <a href="#" class="view_more">
+              <span>더보기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="swiper sec3_slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">Slide 1</li>
+            <li class="swiper-slide">Slide 2</li>
+            <li class="swiper-slide">Slide 3</li>
+            <li class="swiper-slide">Slide 4</li>
+            <li class="swiper-slide">Slide 5</li>
+            <li class="swiper-slide">Slide 6</li>
+            <li class="swiper-slide">Slide 7</li>
+            <li class="swiper-slide">Slide 8</li>
+            <li class="swiper-slide">Slide 9</li>
+          </ul>
+          <div class="swiper-button-next next1"></div>
+          <div class="swiper-button-prev prev1"></div>
+        </div>
+      </section>
+      <!-- 덧니, 피자, 퀴즈 -->
+      <div class="con mw">
+        <section class="sec4">
+          <img src="./images/고슴이의덧니_resizing.png" alt="" />
+          <p>
+            이런저런 복잡한 소식에 마음이 무거워졌다면? <br> 고슴이의 덧니처럼 작고
+            소중한 소식들로 머리 대신 마음을 채워보세요. 비인간 동물, 가까운
+            이웃, 어디서도 못 본 신기한 과학 소식을 받다 보면, 주변에 미처
+            보이지 않았던 존재들이 하나씩 눈에 보이기 시작할 거예요.
+          </p>
+          <button class="btn">덧니 보러가기</button>
+        </section>
+        <div class="sec_pq">
+          <section class="sec5">
+            <img src="./images/피자스테이션.png" alt="" />
+            <div class="sec5_inner">
+              <p>
+                요즘 떠오르는 따끈한 주제에 <br> 뉴니커의 다양한 의견을 얹은 피자스테이션
+              </p>
+              <button class="btn">피자 먹으러 가기</button>
+            </div>
+          </section>
+          <section class="sec6">
+            <div class="sec6_inner1">
+              <span>뉴닉 퀴즈</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="sec6_inner2">
+              <p>퀴즈 풀면서 복습하는 이번 주 이슈</p>
+              <button class="btn">퀴즈 풀러가기</button>
+            </div>
+        </div>
+        </section>
+      </div>
+      <!-- 프리미엄 콘텐츠 -->
+      <div class="sec7 sec_mw">
+        <div class="sec7_title sec_title">
+          <div class="sec7_title_pre title">
+            <strong>프리미엄 콘텐츠</strong>
+            <img src="./images/제목_도형.png" alt="">
+          </div>
+          <div>
+            <a href="#" class="view_more">
+              <span>더보기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <section class="sec7_con">
+          <div class="pre1">
+            <div>
+              <span>교양 기본기 <br> 3종 패키지</span>
+              <p>테크, 인문학, 정치 한 번에 뽀개고 싶다면</p>
+            </div>
+          </div>
+          <div class="pre2">
+            <div>
+              <span>생활 경제 <br> 2종 패키지</span>
+              <p>생활 재테크 + 부동산 전월세 편을 한 번에!</p>
+            </div>
+          </div>
+          <div class="pre3">
+            <div>
+              <span>경제 기본기 <br> 3종 패키지</span>
+              <p>NFT, 주식, 경제 기본기 3종을 한 번에!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 인스타그램 -->
+      <section class="sec8 sec_mw">
+        <div class="sec8_title sec_title">
+          <div class="sec8_title_sns title">
+            <strong>뉴닉 인스타그램</strong>
+            <img src="./images/제목_도형.png" alt="" />
+          </div>
+          <div>
+            <a href="#" class="view_more">
+              <span>더보기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="swiper sec8_slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">Slide 1</li>
+            <li class="swiper-slide">Slide 2</li>
+            <li class="swiper-slide">Slide 3</li>
+            <li class="swiper-slide">Slide 4</li>
+            <li class="swiper-slide">Slide 5</li>
+            <li class="swiper-slide">Slide 6</li>
+            <li class="swiper-slide">Slide 7</li>
+            <li class="swiper-slide">Slide 8</li>
+            <li class="swiper-slide">Slide 9</li>
+          </ul>
+          <div class="swiper-button-next next2"></div>
+          <div class="swiper-button-prev prev2"></div>
+        </div>
+      </section>
+      <!-- 어플 다운로드 -->
+      <section class="sec9 sec_mw">
+        <div class="app">
+          <a href="#">
+            <p>더 편하게 보고 싶다면?뉴닉 앱에서 만나요!</p>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="sec10 sec_mw">
+        <div>
+          <div>
+            <span>(주)뉴닉</span>
+            <p>사업자등록번호: 632-81-01159   /   통신판매번호: 2020-서울마포-2938   /   대표전화: 02-6952-1807
+              대표이사: 김소연   /   개인정보보호책임자: 김소연   /   담당자메일주소: whatsup@newneek.co
+              서울특별시 마포구 어울마당로 35, 5층 (04048)</p>
+          </div>
+          <p>ⓒ NEWNEEK Co., Ltd. 2018-2020.</p>
+        </div>
+        <div>
+          <div>
+            <a href="#"><img class="letter" src="./images/letter.svg"></i></a>
+            <a href="#"><img class="kakao" src="./images/카카오톡_로고 1.svg"></a>
+            <a href="#"><img class="insta" src="./images/insta.svg"></i></a>
+          </div>
+          <div>
+            <a href="#"><span>고객센터</span></a>
+            <a href="#"><span>앱 오류 문의</span></a>
+            <a href="#"><span>서비스이용약관</span></a>
+            <a href="#"><span>개인정보처리방침</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -62,20 +62,6 @@ $close.addEventListener("click", function () {
   $modal.classList.remove("on");
 });
 
-// 모달 영역
-const $open_M = document.querySelector(".open_M");
-const $modal = document.querySelector(".modal");
-const $close = document.querySelector(".close");
-const $top_nav = document.querySelector(".top_nav");
-const $modal_gnb = document.querySelector(".modal_gnb");
-
-$open_M.addEventListener("click", function () {
-  $modal.classList.toggle("on");
-});
-$close.addEventListener("click", function () {
-  $modal.classList.remove("on");
-});
-
 // gotop 버튼
 scrollTop("js-button", 300);
 function scrollTop(elem, duration) {

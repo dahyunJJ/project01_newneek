@@ -55,8 +55,6 @@ body {
 
 .top_icons > button,
 .ham > button {
-.top_icons > button,
-.ham > button {
   background-color: transparent;
   border: none;
   padding-left: var(--gap2);
@@ -69,8 +67,6 @@ body {
   color: var(--point_c1);
 }
 
-.btn_ham {
-  display: none;
 .btn_ham {
   display: none;
 }
@@ -111,7 +107,6 @@ body {
 }
 
 .gnb1 {
-.gnb1 {
   /* border: 1px solid blue; */
   flex-grow: 1;
   padding: 0.25rem var(--gap1);
@@ -121,19 +116,16 @@ body {
   white-space: nowrap;
 }
 .gnb1 a {
-.gnb1 a {
   color: var(--font_c);
   padding: 0 var(--gap3);
   overflow: hidden;
 }
 
 .gnb1 a span {
-.gnb1 a span {
   position: relative;
   display: inline-block;
   transition: 0.3s;
 }
-.gnb1 a span::before {
 .gnb1 a span::before {
   content: attr(data-hover);
   font-weight: bold;
@@ -141,8 +133,6 @@ body {
   top: 100%;
   color: var(--point_c1);
 }
-.gnb1 a:hover span,
-.gnb1 a:focus span {
 .gnb1 a:hover span,
 .gnb1 a:focus span {
   transform: translateY(-100%);
@@ -301,7 +291,7 @@ body {
   /* border: 1px solid red; */
   padding-right: 1rem;
 }
-.title strong {
+
 .title strong {
   font-size: 22px;
   position: relative;
@@ -343,13 +333,8 @@ body {
   max-width: var(--mw);
   margin-top: var(--gap2);
   /* overflow: visible; */
-  margin-top: var(--gap2);
-  /* overflow: visible; */
 }
 
-.slide1 {
-  border: 1px solid var(--line_c);
-  background-color: var(--sec_c1);
 .slide1 {
   border: 1px solid var(--line_c);
   background-color: var(--sec_c1);
@@ -396,7 +381,6 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-
 .next1,
 .next2 {
   right: -50px;
@@ -413,12 +397,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
-  margin-top: 80px;
 }
 
 .sec4 {
-  border-right: 1px solid var(--line_c);
-  border-left: 1px solid var(--line_c);
   border-right: 1px solid var(--line_c);
   border-left: 1px solid var(--line_c);
   width: calc(var(--mw) / 12 * 5);
@@ -463,10 +444,7 @@ body {
   text-align: right;
   white-space: nowrap;
 }
-.sec6_inner2 p {
-}
 
-/* 뉴닉 퀴즈 */
 /* 뉴닉 퀴즈 */
 .sec6 {
   margin-top: 40px;
@@ -490,7 +468,6 @@ body {
 .sec7 {
   background-color: var(--main_c);
   margin-bottom: 80px;
-  margin-bottom: 80px;
 }
 .sec7_con {
   display: flex;
@@ -500,11 +477,7 @@ body {
 .sec7_con a {
   color: var(--font_c);
 }
-.sec7_con a {
-  color: var(--font_c);
-}
 
-.premium {
 .premium {
   border: 1px solid var(--line_c);
   border-radius: 15px;
@@ -515,15 +488,12 @@ body {
   position: relative;
 }
 
-
 .pre1::before {
   content: "";
-  background: rgba(169, 139, 255, 0.3) url(../images/pre_book.png);
   background: rgba(169, 139, 255, 0.3) url(../images/pre_book.png);
 }
 .pre2::before {
   content: "";
-  background: rgba(100, 204, 123, 0.8) url(../images/pre_home.png);
   background: rgba(100, 204, 123, 0.8) url(../images/pre_home.png);
   width: 100px;
   height: 100px;
@@ -532,9 +502,7 @@ body {
   content: "";
   background: rgba(253, 233, 181, 0.8) url(../images/pre_money.png);
 }
-.premium::before {
-  background: rgba(253, 233, 181, 0.8) url(../images/pre_money.png);
-}
+
 .premium::before {
   background-size: 80px;
   background-position: center;
@@ -547,8 +515,6 @@ body {
 }
 
 .premium::after {
-
-.premium::after {
   content: "\2b";
   font-size: 2rem;
   color: var(--icon_c);
@@ -559,12 +525,10 @@ body {
 }
 
 .premium > div > span {
-.premium > div > span {
   font-size: 22px;
   display: block;
   margin: var(--gap2);
 }
-.premium > div > p {
 .premium > div > p {
   margin-left: var(--gap2);
 }
@@ -581,15 +545,12 @@ body {
 /* 어플 다운로드 */
 .sec9 {
   border-bottom: 2px solid var(--point_c1);
-  border-bottom: 2px solid var(--point_c1);
   background-color: var(--point_c1);
-  margin-top: 180px;
-  height: 160px;
   margin-top: 180px;
   height: 160px;
   position: relative;
 }
-.sec9::before,
+
 .sec9::before,
 .sec9::after {
   content: "";
@@ -599,22 +560,11 @@ body {
   background-position: center;
   width: 300px;
   height: 140%;
-  width: 300px;
-  height: 140%;
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
   display: block;
-}
-.sec9::after {
-  content: "";
-  background-image: url(../images/고슴이어플_반짝.png);
-  opacity: 0;
-  transition: 0.3s;
-}
-.sec9:hover::after {
-  opacity: 1;
 }
 .sec9::after {
   content: "";
@@ -641,7 +591,6 @@ body {
   color: var(--font_c);
   padding: var(--gap1) 0;
 }
-.app i {
 .app i {
   margin-left: var(--gap2);
 }
@@ -899,6 +848,9 @@ body {
   }
 
   /* 인스타그램 */
+  .sec8 {
+    margin-top: 40px;
+  }
 
   /* 어플 다운로드 */
   .sec9 {
@@ -908,7 +860,5 @@ body {
   /* footer 영역 */
   .sec10 {
     border: 1px solid tomato;
-  }
-  .add p {
   }
 }

@@ -9,9 +9,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./swiper_test2.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -20,20 +17,24 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" defer></script>
     <title>NEWNEEK</title>
   </head>
   <body>
-    <header class="hd mw mw_M">
-      <div class="top_func">
+    <header class="hd mw">
+      <div class="top_logo">
         <a href="#" class="logo">
           <img src="./images/logo_newneek.png" alt="logo_newneek" />
         </a>
         <div class="top_icons">
-          <button class="btn_login">로그인</button>
-          <button class="btn_search">검색</button>
-          <button class="btn_dark on">
-            <i class="fa-regular fa-moon"></i>
-          </button>
+          <div>
+            <button class="btn_login">로그인</button>
+            <button class="btn_search">검색</button>
+            <button class="btn_dark on">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </div>
           <div class="ham">
             <button class="btn_ham open_M">
               <i class="fa-solid fa-bars"></i>
@@ -41,36 +42,33 @@
           </div>
         </div>
       </div>
-      <nav class="top_nav">
-        <div class="gnb1">
+      <div class="gnb1">
+        <nav class="top_nav">
           <a href="#"><span data-hover="뉴스레터">뉴스레터</span></a>
           <a href="#"><span data-hover="피자스테이션">피자스테이션</span></a>
           <a href="#"><span data-hover="뉴닉퀴즈">뉴닉퀴즈</span></a>
           <a href="#"><span data-hover="뉴문뉴답">뉴문뉴답</span></a>
           <a href="#"><span data-hover="캠페인">캠페인</span></a>
           <a href="#"><span data-hover="뉴닉탄생기">뉴닉탄생기</span></a>
-        </div>
-          </div>
+        </nav>
         <a href="#" class="btn_free"><span>무료로 구독하기</span></a>
-      </nav>
+      </div>
     </header>
 
-    <!-- 모달 영역 -->
-    <div class="modal">
-      <div class="modal_con">
-        <div class="modal_gnb">
-            <a href="#"><span data-hover="뉴스레터">뉴스레터</span></a>
-            <a href="#"><span data-hover="피자스테이션">피자스테이션</span></a>
-            <a href="#"><span data-hover="뉴닉퀴즈">뉴닉퀴즈</span></a>
-            <a href="#"><span data-hover="뉴문뉴답">뉴문뉴답</span></a>
-            <a href="#"><span data-hover="캠페인">캠페인</span></a>
-            <a href="#"><span data-hover="뉴닉탄생기">뉴닉탄생기</span></a>          
-        </div>
-        <div class="madal_x">
-          <button class="btn_x close">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
+    <!-- 모바일메뉴 영역 -->
+    <div class="M_menu">
+      <nav class="M_gnb">
+        <a href="#"><span data-hover="뉴스레터">뉴스레터</span></a>
+        <a href="#"><span data-hover="피자스테이션">피자스테이션</span></a>
+        <a href="#"><span data-hover="뉴닉퀴즈">뉴닉퀴즈</span></a>
+        <a href="#"><span data-hover="뉴문뉴답">뉴문뉴답</span></a>
+        <a href="#"><span data-hover="캠페인">캠페인</span></a>
+        <a href="#"><span data-hover="뉴닉탄생기">뉴닉탄생기</span></a>
+      </nav>
+      <div class="M_menu_x">
+        <button class="btn_x close on">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
     </div>
 
@@ -78,12 +76,14 @@
     <main>
       <!-- 오늘의1분뉴스 -->
       <div class="inside mw">
-        <section class="sec1 mw_M">
+        <section class="sec1">
           <ul class="short_news">
-            <li class="short00">
+            <li class="short00 sec_title">
               <div class="short00_title title">
-                <strong>오늘의 1분 뉴스</strong>
-                <img src="./images/제목_도형.png" alt="" />
+                <div>
+                  <strong>오늘의 1분 뉴스</strong>
+                </div>
+                <img src="./images/제목_도형.png" alt="제목_도형" />
               </div>
               <div>
                 <a href="#" class="view_more">
@@ -149,7 +149,7 @@
           </ul>
         </section>
         <!-- 고슴이구독 -->
-        <section class="sec2 mw_M">
+        <section class="sec2">
           <div class="sec2_inner">
             <div class="sec2_title">
               <p>우리가 시간이 없지,</p>
@@ -167,11 +167,11 @@
         </section>
       </div>
       <!-- 최신뉴스레터 -->
-      <section class="sec3 sec_mw mw_M">
+      <section class="sec3 mw">
         <div class="sec3_title sec_title">
           <div class="sec3_title_new title">
             <div><strong>최신 뉴스레터</strong></div>
-            <img src="./images/제목_도형.png" alt="" />
+            <img src="./images/제목_도형.png" alt="제목_도형" />
           </div>
           <div class="sec3_more">
             <p class="no_btn">좌우로 움직여보세요 ↔</p>
@@ -185,7 +185,7 @@
           <ul class="swiper-wrapper">
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스1.jpg" alt="">
+                <img class="news_img1" src="./images/최신뉴스1.jpg" alt="" />
               </div>
               <div class="headline">
                 <p>삼성전자·SK하이닉스 반도체 실적 악화</p>
@@ -197,7 +197,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스2.jpg" alt="">
+                <img class="news_img1" src="./images/최신뉴스2.jpg" alt="" />
               </div>
               <div class="headline">
                 <p>필수의료 인력 부족 문제와 대책</p>
@@ -209,7 +209,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스3.png" alt="">
+                <img class="news_img1" src="./images/최신뉴스3.png" alt="" />
               </div>
               <div class="headline">
                 <p>시위에 부딪힌 프랑스 연금개혁</p>
@@ -221,7 +221,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스4.png" alt="">
+                <img class="news_img1" src="./images/최신뉴스4.png" alt="" />
               </div>
               <div class="headline">
                 <p>전 세계 이상기후와 기후위기</p>
@@ -233,7 +233,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스5.jpg" alt="">
+                <img class="news_img1" src="./images/최신뉴스5.jpg" alt="" />
               </div>
               <div class="headline">
                 <p>노마스크 헬스장에 온 걸 환영해, 연진아.</p>
@@ -245,7 +245,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스1.jpg" alt="">
+                <img class="news_img1" src="./images/최신뉴스1.jpg" alt="" />
               </div>
               <div class="headline">
                 <p>삼성전자·SK하이닉스 반도체 실적 악화</p>
@@ -257,7 +257,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스2.jpg" alt="">
+                <img class="news_img1" src="./images/최신뉴스2.jpg" alt="" />
               </div>
               <div class="headline">
                 <p>필수의료 인력 부족 문제와 대책</p>
@@ -269,7 +269,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스3.png" alt="">
+                <img class="news_img1" src="./images/최신뉴스3.png" alt="" />
               </div>
               <div class="headline">
                 <p>시위에 부딪힌 프랑스 연금개혁</p>
@@ -281,7 +281,7 @@
             </li>
             <li class="swiper-slide slide1">
               <div>
-                <img class="news_img1" src="./images/최신뉴스4.png" alt="">
+                <img class="news_img1" src="./images/최신뉴스4.png" alt="" />
               </div>
               <div class="headline">
                 <p>전 세계 이상기후와 기후위기</p>
@@ -298,27 +298,32 @@
       </section>
       <!-- 덧니, 피자, 퀴즈 -->
       <div class="con mw">
-        <section class="sec4 mw_M">
-          <img src="./images/고슴이의덧니_resizing.png" alt="" />
+        <section class="sec4">
+          <img
+            src="./images/고슴이의덧니_resizing.png"
+            alt="고슴이의덧니_resizing"
+          />
           <p>
-            이런저런 복잡한 소식에 마음이 무거워졌다면? <br> 고슴이의 덧니처럼 작고
-            소중한 소식들로 머리 대신 마음을 채워보세요. 비인간 동물, 가까운
-            이웃, 어디서도 못 본 신기한 과학 소식을 받다 보면, 주변에 미처
-            보이지 않았던 존재들이 하나씩 눈에 보이기 시작할 거예요.
+            이런저런 복잡한 소식에 마음이 무거워졌다면? <br />
+            고슴이의 덧니처럼 작고 소중한 소식들로 머리 대신 마음을 채워보세요.
+            비인간 동물, 가까운 이웃, 어디서도 못 본 신기한 과학 소식을 받다
+            보면, 주변에 미처 보이지 않았던 존재들이 하나씩 눈에 보이기 시작할
+            거예요.
           </p>
           <button class="btn">덧니 보러가기</button>
         </section>
         <div class="sec_pq">
-          <section class="sec5 mw_M">
-            <img src="./images/피자스테이션.png" alt="" />
+          <section class="sec5">
+            <img src="./images/피자스테이션.png" alt="피자스테이션" />
             <div class="sec5_inner">
               <p>
-                요즘 떠오르는 따끈한 주제에 <br> 뉴니커의 다양한 의견을 얹은 피자스테이션
+                요즘 떠오르는 따끈한 주제에 <br />
+                뉴니커의 다양한 의견을 얹은 피자스테이션
               </p>
               <button class="btn">피자 먹으러 가기</button>
             </div>
           </section>
-          <section class="sec6 mw_M">
+          <section class="sec6">
             <div class="sec6_inner1">
               <span>뉴닉 퀴즈</span>
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -331,11 +336,11 @@
         </div>
       </div>
       <!-- 프리미엄 콘텐츠 -->
-      <div class="sec7 sec_mw mw_M">
+      <div class="sec7 sec_mw mw">
         <div class="sec7_title sec_title">
           <div class="sec7_title_pre title">
             <strong>프리미엄 콘텐츠</strong>
-            <img src="./images/제목_도형.png" alt="">
+            <img src="./images/제목_도형.png" alt="제목_도형" />
           </div>
           <div>
             <a href="#" class="view_more">
@@ -345,38 +350,41 @@
           </div>
         </div>
         <section class="sec7_con">
-          <a href="#">
-            <div class="premium pre1">
-              <div>
-                <span>교양 기본기 <br> 3종 패키지</span>
-                <p>테크, 인문학, 정치 한 번에 뽀개고 싶다면</p>
-              </div>
+          <div class="premium pre1">
+            <div>
+              <span
+                >교양 기본기 <br />
+                3종 패키지</span
+              >
+              <p>테크, 인문학, 정치 한 번에 뽀개고 싶다면</p>
             </div>
-          </a>
-          <a href="#">
-            <div class="premium pre2">
-              <div>
-                <span>생활 경제 <br> 2종 패키지</span>
-                <p>생활 재테크 + 부동산 전월세 편을 한 번에!</p>
-              </div>
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="premium pre2">
+            <div>
+              <span
+                >생활 경제 <br />
+                2종 패키지</span
+              >
+              <p>생활 재테크 + 부동산 전월세 편을 한 번에!</p>
             </div>
-          </a>
-          <a href="#">
-            <div class="premium pre3">
-              <div>
-                <span>경제 기본기 <br> 3종 패키지</span>
-                <p>NFT, 주식, 경제 기본기 3종을 한 번에!</p>
-              </div>
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="premium pre3">
+            <div>
+              <span>경제 기본기 <br />3종 패키지</span>
+              <p>NFT, 주식, 경제 기본기 3종을 한 번에!</p>
             </div>
-          </a>
+            <a href="#">자세히보기</a>
+          </div>
         </section>
-          
+      </div>
       <!-- 인스타그램 -->
-      <section class="sec8 sec_mw mw_M">
+      <section class="sec8 sec_mw mw">
         <div class="sec8_title sec_title">
           <div class="sec8_title_sns title">
             <strong>뉴닉 인스타그램</strong>
-            <img src="./images/제목_도형.png" alt="" />
+            <img src="./images/제목_도형.png" alt="제목_도형" />
           </div>
           <div class="sec8_more">
             <p class="no_btn">좌우로 움직여보세요 ↔</p>
@@ -389,31 +397,76 @@
         <div class="swiper sec8_slide">
           <ul class="swiper-wrapper">
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
             <li class="swiper-slide slide2">
-              <img class="news_img2" src="./images/뉴닉인스타1.jpg" alt="">
+              <img
+                class="news_img2"
+                src="./images/뉴닉인스타1.jpg"
+                alt="뉴닉인스타1"
+              />
+              <a href="#"><span>자세히보기</span></a>
             </li>
           </ul>
         </div>
@@ -421,38 +474,39 @@
         <div class="swiper-button-prev prev2"></div>
       </section>
       <!-- 어플 다운로드 -->
-      <a href="#" class="sec9_a">
-        <section class="sec9 sec_mw mw_M">
-          <div class="app">
-            <p>더 편하게 보고 싶다면? 뉴닉 앱에서 만나요!</p>
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        </section>
-      </a>
-      <button class="gotop" id="js-button">
+      <section class="sec9 sec_mw">
+        <a href="#">클릭하기</a>
+        <div class="app">
+          <p>더 편하게 보고 싶다면? 뉴닉 앱에서 만나요!</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+      <a class="gotop" href="#header">
         <i class="fa-solid fa-arrow-up"></i>
-      </button>
-      
+      </a>
     </main>
     <!-- footer 영역 -->
-    <footer class="company mw mw_M">
+    <footer class="company mw">
       <div class="sec10 sec_mw">
-        
         <div class="info1">
           <div class="add">
             <span>(주)뉴닉</span>
-            <p>사업자등록번호: 632-81-01159   /   통신판매번호: 2020-서울마포-2938   /   대표전화: 02-6952-1807
-              <br>대표이사: 김소연   /   개인정보보호책임자: 김소연   /   담당자메일주소: whatsup@newneek.co
-              
-              서울특별시 마포구 어울마당로 35, 5층 (04048)</p>
+            <p>
+              사업자등록번호: 632-81-01159 / 통신판매번호: 2020-서울마포-2938 /
+              대표전화: 02-6952-1807 <br />대표이사: 김소연 /
+              개인정보보호책임자: 김소연 / 담당자메일주소: whatsup@newneek.co
+              서울특별시 마포구 어울마당로 35, 5층 (04048)
+            </p>
           </div>
           <p>ⓒ NEWNEEK Co., Ltd. 2018-2020.</p>
         </div>
         <div class="info2">
           <div class="foot_icons">
-            <a href="#"><img class="letter" src="./images/letter.svg"></i></a>
-            <a href="#"><img class="kakao" src="./images/카카오톡_로고 1.svg"></a>
-            <a href="#"><img class="insta" src="./images/insta.svg"></i></a>
+            <a href="#"><img class="letter" src="./images/letter.svg" /></a>
+            <a href="#"
+              ><img class="kakao" src="./images/카카오톡_로고 1.svg"
+            /></a>
+            <a href="#"><img class="insta" src="./images/insta.svg" /></a>
           </div>
           <div class="foot_help">
             <a href="#"><span>고객센터</span></a>

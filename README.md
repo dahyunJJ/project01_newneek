@@ -5,17 +5,15 @@
 > 기존 웹사이트를 분석하고 장점과 단점을 파악한 후, 벤치마킹 요소와 결합하여 리뉴얼
 
 ## 프로젝트 내 역할
-> 기획
+> 기획 / 웹디자인 / 코딩
 
-## 사용툴
-> <img src="https://img.shields.io/badge/VS Code-007ACC?style=flat&logo=VS Code&logoColor=white"/> 
+## 사용툴 
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> 
 > <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> 
 > <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/> 
 > <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
 > <img src="https://img.shields.io/badge/Adobe Illustrator-FF9A00?style=flat&logo=Adobe Illustrator&logoColor=white"/>
-> <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/>
-피그마 VScode   
+> <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/>   
 
 ## 약식 기획서 요약
 > ㅇ

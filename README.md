@@ -5,7 +5,7 @@
 > 기존 웹사이트를 분석하고 장점과 단점을 파악한 후, 벤치마킹 요소와 결합하여 리뉴얼
 
 ## 프로젝트 내 역할
-> 기획 / 웹디자인 / 코딩
+> 분석 및 기획 / Figma를 활용한 웹디자인 / 코딩
 
 ## 사용툴 
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> 

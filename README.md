@@ -16,7 +16,8 @@
 > <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/>   
 
 ## 약식 기획서 요약
-> ㅇ
+![image](https://user-images.githubusercontent.com/117347407/220860715-87bd4575-7738-40ac-b50f-08ae71d9553a.png)
+> https://docs.google.com/presentation/d/1H9SW1VP0ZeucmFD-29QJxR3YaRwG4aRTVL3n6b-wf0E/edit?usp=sharing
 
 ## 디자인 시안
 > ㅇ   

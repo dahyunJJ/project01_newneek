@@ -24,4 +24,4 @@
 > https://www.figma.com/file/gWgzCOporOEZbSuoKulVra/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%89%B4%EB%8B%89?node-id=0%3A1&t=Kd2UwOgP5ZsyujEO-1
 
 ## 데모
-> 링크
+> https://dahyunjj.github.io/project01_newneek/

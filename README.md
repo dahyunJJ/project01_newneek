@@ -23,7 +23,7 @@
 
 ## 디자인 시안
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/221061000-99715f3d-5a0b-49ab-bdbf-02803e015b43.jpg">
-▶ https://www.figma.com/file/gWgzCOporOEZbSuoKulVra/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%89%B4%EB%8B%89?node-id=0%3A1&t=Kd2UwOgP5ZsyujEO-1
+▶ https://www.figma.com/file/gWgzCOporOEZbSuoKulVra/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%89%B4%EB%8B%89?t=KtAhiAMWWowyKWbU-1
 
 ## 데모
 ▶ https://dahyunjj.github.io/project01_newneek/

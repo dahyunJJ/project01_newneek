@@ -1,0 +1,226 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+:root {
+  --mw: 1440px;
+  --gap1: 0.5rem;
+  --gap2: 1rem;
+  --gap3: 1.5rem;
+  --font_c: #051619;
+  --font_c2: rgba(0, 0, 0, 0.6);
+  --main_c: #f5f1e8;
+  --point_c1: #ff8303;
+  --point_c2: #a35709;
+  --sec_c1: #fcfbf8;
+  --line_c: rgba(3, 0, 0, 0.2);
+  --icon_c: rgba(3, 0, 0, 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* overflow-x: hidden; */
+  background-color: var(--main_c);
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+}
+
+.mw {
+  /* border: 1px solid red; */
+  max-width: var(--mw);
+  width: calc(100% - 2rem);
+  margin: var(--gap3) auto;
+}
+
+.top_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 226px;
+}
+.logo img {
+  width: 100%;
+}
+
+.top_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.top_icons button {
+  outline: none;
+  border: none;
+  padding-left: var(--gap3);
+  background-color: var(--main_c);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.top_icons button:hover {
+  color: var(--point_c1);
+}
+
+.btn_ham {
+  display: none;
+}
+
+/* 메뉴 영역 */
+.gnb1 {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: 20%;
+  overflow: hidden;
+  margin-top: var(--gap3);
+}
+
+.top_nav a {
+  color: var(--font_c);
+  font-size: 20px;
+  padding: 0 2rem;
+}
+
+.top_nav a span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+.top_nav a span::before {
+  content: attr(data-hover);
+  font-weight: bold;
+  position: absolute;
+  top: 120%;
+  color: var(--point_c1);
+}
+.top_nav a:hover span,
+.top_nav a:focus span {
+  transform: translateY(-120%);
+}
+
+.btn_free span {
+  display: inline-block;
+  border: 1px solid var(--point_c1);
+  border-radius: 30px;
+  background-color: var(--point_c1);
+  color: var(--sec_c1);
+  padding: 0.25rem 1.75rem;
+  white-space: nowrap;
+}
+.btn_free:hover span {
+  color: var(--font_c);
+}
+
+/* 메인 영역 */
+.sec1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+.sub {
+  /* border: 1px solid red; */
+  width: 45%;
+  height: 40vh;
+  position: relative;
+}
+.sub::before {
+  content: "";
+  background-image: url(../images/구독_고슴이.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sub img {
+  position: absolute;
+  right: 0;
+  width: 260px;
+  height: 160px;
+}
+
+.come {
+  /* border: 1px solid blue; */
+  font-size: 2rem;
+  position: absolute;
+  right: 80px;
+  top: -10px;
+  z-index: 1;
+}
+
+.inform {
+  position: absolute;
+  right: -80px;
+  bottom: 50px;
+}
+
+.write {
+  /* border: 1px solid red; */
+  padding-left: 8rem;
+}
+
+.email_add span {
+  color: var(--point_c2);
+}
+
+.check_con {
+  padding-top: 0.75rem;
+}
+
+.check1 {
+  /* border: 1px solid red; */
+  padding: var(--gap1) 0;
+}
+
+.check2 {
+  width: 280px;
+  margin-left: 1.25rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1315px) {
+  .gnb1 {
+    display: none;
+  }
+  .btn_ham {
+    display: block;
+  }
+  .btn_ham i {
+    font-size: 30px;
+    padding: var(--gap1) 0;
+  }
+  .sec1 {
+    border: 1px solid red;
+    display: block;
+    width: calc(100% / 2);
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .gnb1 {
+    display: none;
+  }
+
+  .sec1 {
+    display: block;
+  }
+}

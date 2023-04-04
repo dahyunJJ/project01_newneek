@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -373,6 +373,7 @@ body {
   display: none;
   color: rgba(0, 0, 0, 0.8);
   padding-right: var(--gap3);
+  white-space: nowrap;
 }
 
 .next1,
@@ -399,6 +400,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .sec4 img {
@@ -425,6 +427,7 @@ body {
   align-items: center;
   height: 45%;
   border-bottom: 4px solid var(--point_c1);
+  position: relative;
 }
 .sec5 img {
   /* border: 1px solid; */
@@ -442,6 +445,27 @@ body {
   text-align: right;
   white-space: nowrap;
   padding-bottom: var(--gap2);
+}
+
+.sec4 a,
+.sec5 a,
+.sec6 a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+}
+.sec4:hover .btn,
+.sec5:hover .btn,
+.sec6:hover .btn {
+  color: var(--point_c2);
+  background-color: var(--main_c);
+  border: 1px solid var(--point_c2);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .sec6_inner1 {
@@ -489,6 +513,11 @@ body {
   left: 0;
   color: transparent;
 }
+.premium:hover {
+  border: 1px dashed var(--point_c2);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
 .premium:hover a {
   opacity: 0;
 }
@@ -500,8 +529,6 @@ body {
 .pre2::before {
   content: "";
   background: rgba(100, 204, 123, 0.8) url(../images/pre_home.png);
-  width: 100px;
-  height: 100px;
 }
 .pre3::before {
   content: "";
@@ -526,6 +553,9 @@ body {
   top: 0;
   cursor: pointer;
 }
+.premium:hover::after {
+  transform: rotate(45deg);
+}
 .premium > div > span {
   font-size: 22px;
   display: block;
@@ -538,6 +568,9 @@ body {
 }
 
 /* 인스타그램 */
+.sec8_title_sns strong {
+  white-space: nowrap;
+}
 .slide2 {
   width: calc(100% / 5 - 1rem);
   cursor: pointer;
@@ -630,6 +663,7 @@ body {
   position: fixed;
   bottom: 40px;
   right: 20px;
+  z-index: 100;
 }
 .gotop i {
   display: block;
@@ -648,7 +682,6 @@ body {
   border: 2px solid var(--point_c1);
   border-radius: 30px;
   cursor: pointer;
-  /* 화살표 위치...? */
 }
 
 /* footer 영역 */
@@ -811,5 +844,11 @@ body {
   .foot_help a {
     padding-left: 0;
     padding-right: var(--gap2);
+  }
+}
+
+@media (max-width: 412px) {
+  .top_icons {
+    display: none;
   }
 }

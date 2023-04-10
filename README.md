@@ -36,7 +36,7 @@
 ## 디자인 시안
 > 📌 [피그마 시안 링크](https://www.figma.com/file/gWgzCOporOEZbSuoKulVra/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%89%B4%EB%8B%89?t=KtAhiAMWWowyKWbU-1)   
 
-<img width="60%" src="https://user-images.githubusercontent.com/117347407/221061000-99715f3d-5a0b-49ab-bdbf-02803e015b43.jpg"> 
+<img width="40%" src="https://user-images.githubusercontent.com/117347407/221061000-99715f3d-5a0b-49ab-bdbf-02803e015b43.jpg"> <img width="8%" src="https://user-images.githubusercontent.com/117347407/230927192-3f670285-f043-4801-ad33-8bb4705a1fe1.png">
 
 ## 데모
 ▶ 📌 [데모 링크](https://dahyunjj.github.io/project01_newneek/)   

@@ -66,6 +66,7 @@ body {
   transition: 0.3s;
   font-size: 1rem;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .top_icons button:hover {
@@ -266,6 +267,9 @@ body {
   border-bottom: 1px dashed rgba(3, 0, 0, 0.4);
   padding: var(--gap1) 0;
 }
+.short_news_inner:hover {
+  background-color: #fcfbf898;
+}
 .short_news_inner a {
   color: var(--font_c);
 }
@@ -339,6 +343,7 @@ body {
 .news_img1 {
   width: 100%;
   filter: grayscale(80%);
+  transition: 0.3s;
 }
 .slide1:hover img {
   filter: none;
@@ -457,6 +462,11 @@ body {
   height: 100%;
   color: transparent;
 }
+.sec4 .btn,
+.sec5 .btn,
+.sec6 .btn {
+  transition: 0.3s;
+}
 .sec4:hover .btn,
 .sec5:hover .btn,
 .sec6:hover .btn {
@@ -504,6 +514,7 @@ body {
   background-color: var(--sec_c1);
   margin-top: var(--gap1);
   position: relative;
+  transition: 0.3s;
 }
 .premium a {
   position: absolute;
@@ -512,6 +523,7 @@ body {
   top: 0;
   left: 0;
   color: transparent;
+  transition: 0.3s;
 }
 .premium:hover {
   border: 1px dashed var(--point_c2);
@@ -552,6 +564,7 @@ body {
   right: 10px;
   top: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 .premium:hover::after {
   transform: rotate(45deg);
@@ -587,6 +600,7 @@ body {
   left: 0;
   text-align: center;
   color: transparent;
+  transition: 0.3s;
 }
 .slide2 a span {
   line-height: 250px;
@@ -673,8 +687,10 @@ body {
   font-size: 20px;
   color: var(--sec_c1);
   background-color: var(--point_c2);
+  border: 2px solid var(--point_c2);
   border-radius: 30px;
   padding: var(--gap2);
+  transition: 0.3s;
 }
 .gotop:hover i {
   color: var(--point_c1);

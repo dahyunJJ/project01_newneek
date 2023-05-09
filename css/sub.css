@@ -124,56 +124,66 @@ body {
   color: var(--font_c);
 }
 
-/* 메인 영역 */
+/* 구독 영역 */
 .sec1 {
   display: flex;
-  justify-content: center;
-  margin-top: 160px;
+  justify-content: space-between;
+  margin-top: 8rem;
 }
 .sub {
-  /* border: 1px solid red; */
-  width: 45%;
-  height: 40vh;
+  width: 60%;
   position: relative;
 }
-.sub::before {
+.subWrap {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.sub .sub_imgCon {
+  width: 50%;
+}
+.sub .sub_imgCon img {
+  width: 80%;
+}
+.sub .sub_title {
+  font-size: 2rem;
+  width: 340px;
+  height: 120px;
+  text-align: center;
+  padding-top: 2rem;
+  position: relative;
+  margin: 0;
+}
+.sub .sub_title::after {
   content: "";
-  background-image: url(../images/구독_고슴이.png);
+  background-image: url(../images/Vector.svg);
+  background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
-.sub img {
-  position: absolute;
-  right: 0;
-  width: 260px;
-  height: 160px;
-}
-
-.come {
-  /* border: 1px solid blue; */
-  font-size: 2rem;
-  position: absolute;
-  right: 80px;
-  top: -10px;
-  z-index: 1;
-}
-
 .inform {
   position: absolute;
-  right: -80px;
-  bottom: 50px;
+  bottom: 2rem;
+  left: 50%;
 }
 
+/* //////// */
 .write {
-  /* border: 1px solid red; */
-  padding-left: 8rem;
+  margin: auto;
+}
+.write form {
+  display: flex;
+  flex-direction: column;
+}
+.write h3 {
+  font-size: 1.75rem;
 }
 
 .email_add span {
@@ -196,6 +206,18 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+#submit {
+  border: none;
+  outline: none;
+  background-color: var(--point_c1);
+  color: var(--main_c);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 30%;
+  align-self: center;
+}
+
 @media (max-width: 1315px) {
   .gnb1 {
     display: none;
@@ -207,20 +229,85 @@ body {
     font-size: 30px;
     padding: var(--gap1) 0;
   }
+}
+
+@media (max-width: 980px) {
   .sec1 {
-    border: 1px solid red;
+    margin-top: 4rem;
     display: block;
-    width: calc(100% / 2);
+  }
+  .sub {
+    width: 100%;
     margin: auto;
+  }
+  .sub .sub_imgCon {
+    width: 80%;
+  }
+  .sub .inform {
+    right: -30%;
+    bottom: -0.5rem;
+  }
+  .write {
+    width: 100%;
+    margin: auto;
+  }
+  .write form {
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .sub .inform {
+    right: -40%;
+    bottom: -0.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .sec1 {
+    margin-top: 2rem;
+  }
+  .sub {
+    flex-wrap: wrap;
+  }
+  .sub .sub_imgCon,
+  .sub_title {
+    width: calc(100% / 2 - 1rem);
+  }
+  .sub .inform {
+    position: static;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .write {
+    margin-top: 1rem;
+  }
+  .write h3 {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
-  .gnb1 {
-    display: none;
+@media (max-width: 470px) {
+  .inform {
+    font-size: 0.8rem;
   }
-
-  .sec1 {
-    display: block;
+  .sub .sub_title {
+    font-size: 1.5rem;
+    width: 200px;
+    padding-top: 0.5rem;
+  }
+}
+@media (max-width: 380px) {
+  .inform {
+    font-size: 0.7rem;
+  }
+  .write h3 {
+    font-size: 1rem;
+  }
+  .top_icons {
+    width: 120px;
+  }
+  .top_icons button {
+    font-size: 0.75rem;
+    padding-left: 0;
   }
 }

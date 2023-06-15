@@ -1,3 +1,6 @@
+<img width="100%" src="https://github.com/dahyunJJ/project01_newneek/assets/117347407/d7b514f1-401a-4488-8810-85ca1d96c72e">
+
+
 # project01_newneek
 > **팀원** : 정다현, 이상희, 금현진, 주자명 <br>
 >

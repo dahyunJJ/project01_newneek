@@ -6,8 +6,7 @@
 >
 > 사용자의 사용성과 콘텐츠 접근성을 개선한 반응형 웹사이트 구현 <br>
 >
-> **기존 뉴닉 사이트** https://www.newneek.co/
-> 
+> **기존 뉴닉 사이트** https://www.newneek.co/> 
 <br/>
 
 ### 프로젝트의 목적
@@ -16,9 +15,6 @@
 > 기존 앱에만 업로드 되어 있는 콘텐츠를 웹에서도 이용할 수 있도록 레이아웃 개선 <br>
 >
 > 이용자의 더 나은 구독 서비스를 위한 구독신청 페이지 레이아웃 개선
-
-![image](https://github.com/dahyunJJ/project01_newneek/assets/117347407/05c27954-8862-4652-ab76-07f46df1e4bf)
-
 <br/>
 
 ### 프로젝트 내 역할
@@ -27,6 +23,11 @@
 > 디자인 : 100% <br>
 > 코딩 : 100% <br>
 > 
+<br/>
+
+### 사이트 장점 분석
+<img width="70%" src="https://github.com/dahyunJJ/project01_newneek/assets/117347407/05c27954-8862-4652-ab76-07f46df1e4bf">
+
 <br/>
 
 ## 기술 스택 

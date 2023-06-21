@@ -6,7 +6,7 @@
 >
 > 사용자의 사용성과 콘텐츠 접근성을 개선한 반응형 웹사이트 구현 <br>
 >
-> **기존 뉴닉 사이트** https://www.newneek.co/
+> **기존 뉴닉 사이트** [https://www.newneek.co/](https://newneek.co/)
 <br/>
 
 ### 프로젝트의 목적
